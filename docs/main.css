@@ -33,6 +33,12 @@ li{
     margin: 0 10px;
 }
 
+.main-image{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border-radius:20px;
+}
 #about p{
     font-size: 1.2em;
     line-height: 1.6;
@@ -45,4 +51,35 @@ li{
 #project{
     margin: auto;
     width:500px;
+}
+/*Media Query for mobile devices*/
+@media only screen and (max-width: 600px) {
+    nav{
+        position:relative;
+        width:100%;
+    }
+    nav p{
+        display: block;
+        float: none;
+        margin: 0;
+    }
+    .main-image{
+        height: 200px;
+        width: 200px;
+        position: relative;
+        border-radius:20px;
+    }
+    #about p{
+        font-size: 1em;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 0 20px;
+        padding-top: 50px;
+        margin-bottom:20px;
+    }
+    #project{
+        margin: auto;
+        width:300px;
+    }
 }
