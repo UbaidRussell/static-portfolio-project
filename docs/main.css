@@ -10,12 +10,34 @@ body{
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
 }
+nav{
+    position:fixed
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+nav p{
+    display: inline-block;
+    float: right;
+    margin:20px;
+}
+.heading{
+    float: left;
+    margin: 30px;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
 #about p{
     font-size: 1.2em;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 600px;
     padding: 0 20px;
-    margin-top: 20px;
+    padding-top: 100px;
     margin-bottom:20px;
 }
