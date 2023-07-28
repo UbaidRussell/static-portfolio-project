@@ -11,7 +11,8 @@ body{
     text-align: center;
 }
 nav{
-    position:fixed
+    position:fixed;
+    width:100%;
 }
 a{
     text-decoration:none;
