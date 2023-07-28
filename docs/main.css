@@ -61,7 +61,7 @@ li{
         width:100%;
     }
     nav p{
-        display: block;
+        display: none;
         float: none;
         margin: 0;
     }
