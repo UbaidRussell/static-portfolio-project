@@ -113,6 +113,21 @@ li{
         position: relative;
         border-radius:20px;
     }
+    .image-container{
+        width: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .image-overlay{
+        height: 400px;
+        width: 300px;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .view-icon{
+        top: 65%;
+        left: 50%;
+    }
     #about p{
         font-size: 1em;
         line-height: 1.6;
