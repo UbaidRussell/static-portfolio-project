@@ -95,6 +95,13 @@ li{
     font-size: 50px;
     cursor: pointer;
 }
+.night-mode-button{
+    border: none;
+}
+.morning-mode-button{
+    border: none;
+    display: none;
+}
 
 /*Media Query for mobile devices*/
 @media only screen and (max-width: 600px) {
