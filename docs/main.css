@@ -66,8 +66,8 @@ li{
         margin: 0;
     }
     .main-image{
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
         position: relative;
         border-radius:20px;
     }
@@ -81,6 +81,10 @@ li{
         margin-bottom:20px;
     }
     #project{
+        margin: auto;
+        width:300px;
+    }
+    #services{
         margin: auto;
         width:300px;
     }
