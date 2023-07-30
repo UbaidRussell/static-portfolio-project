@@ -3,7 +3,6 @@ let lightModeButton = document.getElementsByClassName("morning-mode-button")[0];
 let body = document.getElementsByTagName("body")[0];
 let links = document.getElementsByTagName("a");
 
-
 body.onload = function (){
     lightModeButton.style.visibility = "hidden";
 }
@@ -36,3 +35,22 @@ lightModeButton.addEventListener("click", function (){
     links[3].style.color = "black";
     links[4].style.color = "black";
 });
+
+
+function getScrollLocation() {
+    window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if(scroll > 60){
+        darkModeButton.style.visibility = "hidden";
+        lightModeButton.style.visibility = "hidden";
+    } 
+
+    
+    console.log(scroll);
+});
+}
+
+console.log(getScrollLocation());
+
+// Path: docs/main.js
+    
