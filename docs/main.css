@@ -100,7 +100,7 @@ li{
 }
 .morning-mode-button{
     border: none;
-    display: none;
+    visibility: hidden;
 }
 
 /*Media Query for mobile devices*/
