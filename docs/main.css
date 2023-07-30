@@ -97,10 +97,13 @@ li{
 }
 .night-mode-button{
     border: none;
+    border-radius: 20%;
+    margin:10px;
 }
 .morning-mode-button{
     border: none;
-    visibility: hidden;
+    border-radius: 20%;
+    margin:10px;
 }
 
 /*Media Query for mobile devices*/
@@ -141,7 +144,7 @@ li{
         margin: 0 auto;
         max-width: 300px;
         padding: 0 20px;
-        padding-top: 100px;
+        padding-top:0px;
         margin-bottom:20px;
     }
     #project{
