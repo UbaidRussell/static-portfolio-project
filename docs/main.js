@@ -20,6 +20,8 @@ darkModeButton.addEventListener("click", function (){
     links[2].style.color = "white";
     links[3].style.color = "white";
     links[4].style.color = "white";
+
+
 });
 
 lightModeButton.addEventListener("click", function (){
@@ -37,6 +39,15 @@ lightModeButton.addEventListener("click", function (){
 });
 
 
+/* function getScreenColor(){
+    let color = body.style.backgroundColor;
+    console.log(color.property);
+}
+
+getScreenColor();
+ */
+
+
 function getScrollLocation() {
     window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
@@ -44,13 +55,11 @@ function getScrollLocation() {
         darkModeButton.style.visibility = "hidden";
         lightModeButton.style.visibility = "hidden";
     } 
-
-    
     console.log(scroll);
 });
-}
+} 
 
-console.log(getScrollLocation());
+console.log(getScrollLocation()); 
 
 // Path: docs/main.js
     
