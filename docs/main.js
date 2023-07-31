@@ -51,10 +51,14 @@ getScreenColor();
 function getScrollLocation() {
     window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
+
     if(scroll > 60){
         darkModeButton.style.visibility = "hidden";
         lightModeButton.style.visibility = "hidden";
-    } 
+    } else {
+        darkModeButton.style.visibility = "visible";
+    }
+
     console.log(scroll);
 });
 } 
