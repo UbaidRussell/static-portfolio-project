@@ -46,9 +46,9 @@ function changelightMode() {
     let scroll = this.scrollY;
 
     if(scroll > 60){
-        buttons.style.visibility = "hidden";      
-    } else {
-        buttons.style.visibility = "visible";
+        buttons.style.visibility = "hidden";      //Buttons are hidden when the user scrolls down
+    } else { //These two lines of code are not working
+        buttons.style.visibility = "visible"; //Buttons are visible when the user scrolls up
     }
 
 
