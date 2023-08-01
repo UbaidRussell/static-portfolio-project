@@ -1,11 +1,18 @@
 let darkModeButton = document.getElementsByClassName("night-mode-button")[0];
 let lightModeButton = document.getElementsByClassName("morning-mode-button")[0];
+let buttons = document.querySelectorAll("button")
 let body = document.getElementsByTagName("body")[0];
 let links = document.getElementsByTagName("a");
+let x;
 
-body.onload = function (){
+
+ body.onload = function (){
     lightModeButton.style.visibility = "hidden";
-}
+     //Hides the dark mode button when the page is in dark mode
+     if(body.style.backgroundColor === "black") {
+        darkModeButton.style.visibility = "hidden"; 
+    }
+} 
 
 
 darkModeButton.addEventListener("click", function (){
@@ -34,32 +41,29 @@ lightModeButton.addEventListener("click", function (){
 
 
 
-function changeOnlightMode() {
+function changelightMode() {
     window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
 
     if(scroll > 60){
-        darkModeButton.style.visibility = "hidden";      
+        buttons.style.visibility = "hidden";      
     } else {
-        darkModeButton.style.visibility = "visible";
+        buttons.style.visibility = "visible";
     }
 
-    if(scroll > 60){
-        lightModeButton.style.visibility = "hidden";      
-    } 
 
-    //Hides the dark mode button when the page is in dark mode
-     if(body.style.backgroundColor === "black") {
-        darkModeButton.style.visibility = "hidden"; 
-    }
 
     ///We left off here
     console.log(scroll);
+    return scroll;
 });
-}
+} 
 
 
-console.log(changeOnlightMode()); 
 
+
+
+
+console.log(changelightMode());
 // Path: docs/main.js
     
