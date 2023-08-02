@@ -37,5 +37,4 @@ lightModeButton.addEventListener("click", function (){
     links[2].style.color = "black";
     links[3].style.color = "black";
     links[4].style.color = "black";
-});
-    
+}); 
