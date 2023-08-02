@@ -38,32 +38,4 @@ lightModeButton.addEventListener("click", function (){
     links[3].style.color = "black";
     links[4].style.color = "black";
 });
-
-
-
-function changelightMode() {
-    window.addEventListener("scroll", (event) => {
-    let scroll = this.scrollY;
-
-    if(scroll > 60){
-        buttons.style.visibility = "hidden";      //Buttons are hidden when the user scrolls down
-    } else { //These two lines of code are not working
-        buttons.style.visibility = "visible"; //Buttons are visible when the user scrolls up
-    }
-
-
-
-    ///We left off here
-    console.log(scroll);
-    return scroll;
-});
-} 
-
-
-
-
-
-
-console.log(changelightMode());
-// Path: docs/main.js
     
