@@ -44,8 +44,19 @@ li{
     margin-bottom:20px;
 }
 #project{
+    position: relative;
     margin: auto;
-    width:500px;
+    width:600px;
+}
+#project p{
+    position: relative;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 20px;
+    margin-bottom:20px;
+    right:10px;
 }
 .contact-p{
     font-size: 1.2em;
