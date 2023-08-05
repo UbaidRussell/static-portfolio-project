@@ -68,6 +68,12 @@ li{
     margin-bottom:20px;
     right:10px;
 }
+#contact{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 .contact-p{
     font-size: 1.2em;
     line-height: 1.6;
